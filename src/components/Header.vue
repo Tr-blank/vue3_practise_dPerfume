@@ -13,28 +13,28 @@ const categories = ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
       <div>
         <RouterLink
           :to="{ name: 'categories', params: { category: categories[0] } }"
-          class="inline-block text-xl text-perfumes-gray pr-7 py-2"
+          class="inline-block text-xl text-perfumes-gray pl-7 py-2"
         >
           <span class="material-icons align-middle text-lg"> store </span>
           <span class="align-middle">Product</span>
         </RouterLink>
         <RouterLink
           :to="{ name: 'categories', params: { category: categories[0] } }"
-          class="inline-block text-xl text-perfumes-gray pr-7 py-2"
+          class="inline-block text-xl text-perfumes-gray pl-7 py-2"
         >
-          <span class="material-icons align-middle text-lg"> favorite </span>
+          <span class="material-icons align-middle text-lg"> person </span>
           <span class="align-middle">log in</span>
         </RouterLink>
         <RouterLink
           :to="{ name: 'categories', params: { category: categories[0] } }"
-          class="inline-block text-xl text-perfumes-gray pr-7 py-2"
+          class="inline-block text-xl text-perfumes-gray pl-7 py-2"
         >
           <span class="material-icons align-middle text-lg"> favorite </span>
           <span class="align-middle">Wishlist</span>
         </RouterLink>
         <RouterLink
           :to="{ name: 'categories', params: { category: categories[0] } }"
-          class="inline-block text-xl text-perfumes-gray pr-7 py-2"
+          class="inline-block text-xl text-perfumes-gray pl-7 py-2"
         >
           <span class="material-icons align-middle text-lg"> shopping_cart </span>
           <span class="align-middle">Cart(3)</span>
