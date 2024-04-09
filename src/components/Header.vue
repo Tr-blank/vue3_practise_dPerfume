@@ -5,9 +5,9 @@ const categories = ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
 <template>
   <header>
     <div class="main-container flex justify-between">
-      <h1>
+      <h1 class="py-2">
         <RouterLink to="/">
-          <img src="" />
+          <img src="@/assets/img/dPerfume.png" alt="d'Perfume logo" />
         </RouterLink>
       </h1>
       <div>
