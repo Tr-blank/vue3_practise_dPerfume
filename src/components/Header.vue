@@ -41,7 +41,7 @@ const categories = ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
         </RouterLink>
       </div>
     </div>
-    <div class="bg-perfumes-main bg-blue">
+    <div class="bg-perfumes-main">
       <div class="main-container">
         <RouterLink
           v-for="category in categories"
@@ -55,5 +55,3 @@ const categories = ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
     </div>
   </header>
 </template>
-
-<style scoped></style>
