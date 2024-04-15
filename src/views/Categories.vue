@@ -140,7 +140,9 @@ const perfumes = [
 
 <template>
   <main>
-    <div class="main-container grid grid-cols-4 gap-[30px] -mx-2 pt-20">
+    <div
+      class="main-container grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-[30px] -mx-2 pt-10 md:pt-20"
+    >
       <ProductCard v-for="perfume in perfumes" :key="perfume.id" :product="perfume" />
     </div>
     <div class="py-16 text-center">

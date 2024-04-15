@@ -10,7 +10,8 @@ export default {
       'perfumes-main-light': '#AC8A46',
       'perfumes-main': '#916000',
       'perfumes-main-dark': '#6C4700',
-      'perfumes-gray': '#8D8D8D'
+      'perfumes-gray': '#8D8D8D',
+      'perfumes-gray-dark': '#707070'
     }
   },
   plugins: []

@@ -1,5 +1,5 @@
 <template>
-  <div class="newsletter h-[600px] bg-center bg-fixed">
+  <div class="newsletter h-[600px] bg-center bg-clip-padding">
     <div class="main-container pt-[300px]">
       <div class="text-perfumes-gray text-3xl font-semibold pb-4">
         記得<br />訂閱以獲取更多資訊！

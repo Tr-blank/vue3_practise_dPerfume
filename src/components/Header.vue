@@ -3,7 +3,7 @@ const categories = ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
 </script>
 
 <template>
-  <header class="bg-white">
+  <header class="fixed top-0 z-50 bg-white w-full">
     <div class="main-container flex justify-between">
       <h1 class="py-2">
         <RouterLink to="/">

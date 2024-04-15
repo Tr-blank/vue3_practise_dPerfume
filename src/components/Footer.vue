@@ -7,7 +7,7 @@
         </RouterLink>
         <span class="text-white text-sm">© 2020. All Rights Reserved.</span>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center hidden lg:block">
         <RouterLink
           :to="{ name: 'categories', params: { category: 'CHANEL' } }"
           class="inline-block text-xl text-white pl-7 py-5"
