@@ -139,8 +139,19 @@ const perfumes = [
 </script>
 
 <template>
-  <main class="main-container grid grid-cols-4 gap-[30px] -mx-2 pt-20">
-    <ProductCard v-for="perfume in perfumes" :key="perfume.id" :product="perfume" class="" />
+  <main>
+    <div class="main-container grid grid-cols-4 gap-[30px] -mx-2 pt-20">
+      <ProductCard v-for="perfume in perfumes" :key="perfume.id" :product="perfume" />
+    </div>
+    <div class="py-16 text-center">
+      <RouterLink
+        to="/"
+        class="text-xl p-3 hover:text-perfumes-main-light underline text-perfumes-main-light"
+        >1</RouterLink
+      >
+      <RouterLink to="/" class="text-xl p-3 hover:text-perfumes-main-light">2</RouterLink>
+      <RouterLink to="/" class="text-xl p-3 hover:text-perfumes-main-light">3</RouterLink>
+    </div>
+    <Newsletter />
   </main>
-  <Newsletter />
 </template>

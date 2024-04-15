@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+import Newsletter from '@/components/Newsletter.vue'
+</script>
 
 <template>
-  <main>home</main>
+  <main>
+    <Newsletter />
+  </main>
 </template>
