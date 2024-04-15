@@ -3,24 +3,30 @@ defineProps(['product'])
 </script>
 
 <template>
-  <div class="w-1/4 p-4">
-    <div class="">
-      <img :src="product.image" :alt="product.title" />
+  <div class="">
+    <div class="relative w-full pt-[100%]">
+      <img
+        :src="product.image"
+        :alt="product.title"
+        class="absolute top-0 left-0 w-full h-full object-cover"
+      />
     </div>
-    <div>{{ product.title }}</div>
-    <div>{{ product.category }}</div>
+    <div class="text-2xl font-semibold pt-1">{{ product.title }}</div>
+    <div class="font-light">{{ product.category }}</div>
     <div>
-      <span>{{ product.price }}</span>
-      <span class="underline">{{ product.origin_price }}</span>
+      <span>{{ $currencyFormat(product.price) }}</span>
+      <span class="text-perfumes-gray line-through ml-2">{{
+        $currencyFormat(product.origin_price)
+      }}</span>
     </div>
-    <div>
-      <span class="material-icons align-middle text-lg"> favorite </span>
-      <span class="material-icons align-middle text-lg"> shopping_cart </span>
+    <div class="text-perfumes-main">
+      <span class="material-icons align-middle text-xl cursor-pointer"> favorite </span>
+      <span class="material-icons align-middle text-xl ml-1 cursor-pointer"> shopping_cart </span>
     </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 /* @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
