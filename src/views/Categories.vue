@@ -1,5 +1,6 @@
 <script setup>
 import ProductCard from '@/components/ProductCard.vue'
+import Newsletter from '@/components/Newsletter.vue'
 
 const perfumes = [
   {
@@ -141,4 +142,5 @@ const perfumes = [
   <main class="main-container grid grid-cols-4 gap-[30px] -mx-2 pt-20">
     <ProductCard v-for="perfume in perfumes" :key="perfume.id" :product="perfume" class="" />
   </main>
+  <Newsletter />
 </template>

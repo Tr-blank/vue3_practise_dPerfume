@@ -25,13 +25,3 @@ defineProps(['product'])
     </div>
   </div>
 </template>
-
-<style lang="scss">
-/* @media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-} */
-</style>
