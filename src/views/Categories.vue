@@ -138,12 +138,7 @@ const perfumes = [
 </script>
 
 <template>
-  <main class="main-container flex flex-wrap -mx-2">
-    <ProductCard
-      v-for="perfume in perfumes"
-      :key="perfume.id"
-      :product="perfume"
-      class="w-1/4 p-4"
-    />
+  <main class="main-container grid grid-cols-4 gap-[30px] -mx-2 pt-20">
+    <ProductCard v-for="perfume in perfumes" :key="perfume.id" :product="perfume" class="" />
   </main>
 </template>
