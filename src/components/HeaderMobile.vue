@@ -1,6 +1,6 @@
 <script setup>
+defineProps(['categories'])
 import { ref } from 'vue'
-const categories = ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
 let isOpenMenu = ref(false)
 
 const clickBars = () => {
@@ -18,7 +18,7 @@ const clickBars = () => {
       </h1>
       <div class="flex items-center">
         <RouterLink
-          :to="{ name: 'categories', params: { category: categories[0] } }"
+          :to="{ name: 'categories', params: { category: 'all' } }"
           class="relative inline-block text-xl text-perfumes-gray pl-3 py-2 hover:text-perfumes-main-light"
         >
           <span class="material-icons align-middle text-2xl"> shopping_cart </span>
@@ -37,7 +37,7 @@ const clickBars = () => {
     </div>
     <div v-if="isOpenMenu" class="bg-perfumes-main">
       <RouterLink
-        :to="{ name: 'categories', params: { category: categories[0] } }"
+        :to="{ name: 'categories', params: { category: 'all' } }"
         class="block bg-perfumes-gray-dark text-xl py-5 border-t border-white font-light text-white pr-7 text-center"
       >
         Product
