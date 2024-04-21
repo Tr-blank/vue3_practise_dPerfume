@@ -43,6 +43,14 @@ const clickBars = () => {
         Product
       </RouterLink>
       <RouterLink
+        v-for="category in categories"
+        :key="category"
+        :to="{ name: 'categories', params: { category: category } }"
+        class="block bg-perfumes-gray text-lg py-2 border-t border-white font-light text-white pr-7 text-center"
+      >
+        {{ category }}
+      </RouterLink>
+      <RouterLink
         to="/"
         class="block bg-perfumes-gray-dark text-xl py-5 border-t border-white font-light text-white pr-7 text-center"
       >

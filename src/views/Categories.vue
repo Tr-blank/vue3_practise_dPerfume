@@ -1,19 +1,28 @@
 <script setup>
-import { computed } from 'vue'
+import axios from 'axios'
+import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import ProductCard from '@/components/ProductCard.vue'
 import Newsletter from '@/components/Newsletter.vue'
-import { getPerfumes } from '@/composables/useApi'
+const apiBaseUrl = 'https://express-dperfume-api.onrender.com'
 const route = useRoute()
-const { data } = getPerfumes()
-const perfumes = data
-
-const isLoading = computed(() => !perfumes.value)
+const perfumes = ref([])
+const isLoading = computed(() => perfumes.value.length === 0)
 const currentCategory = computed(() => route.params.category)
 const currentPerfumes = computed(() => {
   if (isLoading.value || currentCategory.value === 'all') return perfumes.value
   return perfumes.value.filter((perfume) => perfume.category === currentCategory.value)
 })
+
+const getPerfumes = async () => {
+  try {
+    const { data } = await axios.get(`${apiBaseUrl}/perfumes`)
+    perfumes.value = data
+  } catch (error) {
+    console.log(error)
+  }
+}
+getPerfumes()
 </script>
 
 <template>
