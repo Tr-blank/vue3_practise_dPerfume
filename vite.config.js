@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vue3_practise_dPerfume/',
+  // base: '/vue3_practise_dPerfume/',
   plugins: [vue()],
   resolve: {
     alias: {

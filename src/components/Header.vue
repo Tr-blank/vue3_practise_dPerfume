@@ -39,6 +39,13 @@ defineProps(['categories'])
           <span class="material-icons align-middle text-lg"> shopping_cart </span>
           <span class="align-middle">Cart(3)</span>
         </RouterLink>
+        <RouterLink
+          :to="{ name: 'backstage' }"
+          class="inline-block text-xl text-perfumes-gray pl-7 py-2 hover:text-perfumes-main-light"
+        >
+          <span class="material-icons align-middle text-lg"> settings </span>
+          <span class="align-middle">Backstage</span>
+        </RouterLink>
       </div>
     </div>
     <div class="bg-perfumes-main">
