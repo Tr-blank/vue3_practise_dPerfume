@@ -12,7 +12,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.6.8",
