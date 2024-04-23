@@ -4,7 +4,7 @@ import Categories from '../views/Categories.vue'
 import Backstage from '../views/Backstage.vue'
 
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHistory('/#/'),
   routes: [
     {
       path: '/',
